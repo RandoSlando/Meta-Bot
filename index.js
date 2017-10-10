@@ -433,4 +433,4 @@ if(message.content.includes('.org')) { //.org blockage
     //guild.defaultChannel.sendMessage('New role "'+ role.name + '"')
     //console.log('New role called ' + role.name + ' in guild ' + guild.name)
 //})
-client.login('process.env.BOT_TOKEN'); // BOT
+client.login('process.env.TOKEN'); // BOT
