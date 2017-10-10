@@ -226,7 +226,14 @@ if(message.content.startsWith(pre + 'suicide')) {
     message.reply(':dagger:  :gun: ')
 }
 
-
+if(message.content.startsWith(pre+'updates')) {
+    const embed = new Discord.RichEmbed()
+    .setColor('1DF914')
+    .setTimestamp()
+    .setTitle('UPDATES')
+    .setDescription(`Hello! Thanks for using Meta Bot! :smile:\nThe latest version of Meta Bot (1.0.1)\nMeta Bot is now hosted on a server (No longer Local Host)\nNew updates are...\nNew grace period (every 2 days on weekends)`)
+    message.channel.send({embed})
+}
 
 if(message.content.startsWith('Help me!')) {
     message.delete(5000,1)
